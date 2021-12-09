@@ -506,3 +506,6 @@ div.similar-notes-wrapper a,
     border-top: 1px solid #4D493E !important;
 }
 
+.calendar-date {
+    background-color: transparent !important;
+}
