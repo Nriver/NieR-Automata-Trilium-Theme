@@ -505,6 +505,13 @@ div.similar-notes-wrapper a,
     background-color: transparent !important;
 }
 
+.calendar-date-today{
+    background-color: #A39F89 !important;
+}
+
+.calendar-date-active{
+    background-color: #8D897E !important;
+}
 
 .slider {
     background-color: #8D897E !important;
