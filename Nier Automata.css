@@ -1,4 +1,4 @@
-/* 
+/*
     https://github.com/Nriver/NieR-Automata-Trilium-Theme
 */
 
@@ -7,9 +7,13 @@
     1. remove all the old theme class e.g. `.theme-nier-automata`
     2. add some new css
     3. set `--button-background-color` to `transparent`
+
+    How to adapt theme to 0.52
+    1. refer to `.excalidraw` part, use css calculator to find filter value.
+
 */
 
-body{
+body {
     background-size: 4px 4px;
     background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
     font-family: "Noto Sans", sans-serif;
@@ -103,18 +107,18 @@ input:focus {
     margin-bottom: 0;
 }
 
-.ck-content .todo-list .todo-list__label>input[checked]::before {
+.ck-content .todo-list .todo-list__label > input[checked]::before {
     background-color: #4D493E;
     border: 1px solid #4D493E;
     border-radius: 0;
 }
 
-.ck-content .todo-list .todo-list__label>input:before {
+.ck-content .todo-list .todo-list__label > input:before {
     border: 1px solid #4D493E;
     border-radius: 0;
 }
 
-.ck-content .todo-list .todo-list__label>input::after {
+.ck-content .todo-list .todo-list__label > input::after {
     border-color: transparent !important;
 }
 
@@ -240,9 +244,12 @@ body.nav-link:hover {
 
 
 /* up/down button(little triangles/arrows after input number)  */
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 0;
+}
 
-bodyinput[type=number]::-webkit-inner-spin-button {
-    opacity: 0.4;
+input[type=number]::-webkit-inner-spin-button:hover {
+    opacity: 0.6;
 }
 
 
@@ -299,7 +306,7 @@ div.similar-notes-wrapper a,
 
 /* checkbox style 4 places to change */
 
-.tree-settings-popup>input[checked]::before,
+.tree-settings-popup > input[checked]::before,
 .custom-control-input input[checked]::before,
 .tab-content input[checked]::before {
     background-color: #4D493E;
@@ -307,7 +314,7 @@ div.similar-notes-wrapper a,
     border-radius: 0;
 }
 
-.tree-settings-popup>input[type=checkbox],
+.tree-settings-popup > input[type=checkbox],
 .custom-control-input input[type=checkbox],
 .tab-content input[type=checkbox] {
     margin-right: 5px;
@@ -345,12 +352,12 @@ div.similar-notes-wrapper a,
     background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     border-radius: 0;
     background: #C8C2AA;
 }
 
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
     background-image: unset !important;
     background: #4D493E;
 }
@@ -405,7 +412,7 @@ div.similar-notes-wrapper a,
 
 .ck-block-toolbar-button,
 
-/* .ck-button__label, */
+    /* .ck-button__label, */
 
 .ck-tooltip__text,
 .ck-rounded-corners a.ck.ck-button,
@@ -432,32 +439,32 @@ div.similar-notes-wrapper a,
 
 
 /*
-    Trilium 0.48 compatibility
+   Trilium 0.48 compatibility
 */
 
-#launcher-pane{
+#launcher-pane {
     background-size: 4px 4px;
     background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
     font-family: "Noto Sans", sans-serif;
     box-shadow: inset 0 0 150px rgba(77, 73, 62, 0.3), inset 0 0 150px rgba(77, 73, 62, 0.3);
 }
 
-#left-pane{
+#left-pane {
     background-size: 4px 4px;
     background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
     font-family: "Noto Sans", sans-serif;
     box-shadow: inset 0 0 150px rgba(77, 73, 62, 0.3), inset 0 0 150px rgba(77, 73, 62, 0.3);
 }
 
-.tree-actions{
+.tree-actions {
     background: transparent !important;
 }
 
-.tab-row-widget{
+.tab-row-widget {
     background: transparent !important;
 }
 
-.note-tab-wrapper{
+.note-tab-wrapper {
     background-size: 4px 4px;
     background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
     font-family: "Noto Sans", sans-serif;
@@ -475,6 +482,7 @@ div.similar-notes-wrapper a,
 .modal-header {
     border-bottom: 1px solid #4D493E !important;
 }
+
 .nav-tabs {
     border-bottom: 1px solid #4D493E !important;
 }
@@ -497,7 +505,7 @@ div.similar-notes-wrapper a,
     border: 1px solid #4D493E !important;
 }
 
-.modal-footer{
+.modal-footer {
     border-top: 1px solid #4D493E !important;
 }
 
@@ -505,11 +513,11 @@ div.similar-notes-wrapper a,
     background-color: transparent !important;
 }
 
-.calendar-date-today{
+.calendar-date-today {
     background-color: #A39F89 !important;
 }
 
-.calendar-date-active{
+.calendar-date-active {
     background-color: #8D897E !important;
 }
 
@@ -520,3 +528,50 @@ div.similar-notes-wrapper a,
 .slider.checked {
     background-color: #4D493E !important;
 }
+
+/* excalidraw */
+rect {
+    fill: #C8C2AA;
+}
+
+/*
+.excalidraw {
+
+
+    --button-gray-1: #D2CBAD;
+    --button-gray-2: #C8C2AA;
+    --button-gray-3: #A39F89;
+
+    --icon-fill-color: #4D493E;
+
+    --default-bg-color: #C8C2AA;
+    --input-bg-color: #C8C2AA;
+    --input-border-color:#4D493E;
+
+    --island-bg-color: #A39F89;
+
+    --dialog-border-color: #4D493E;
+
+    --color-primary: #C8C2AA;
+    --color-primary-light: #C8C2AA;
+    --color-primary-contrast-offset: #A39F89;
+excalidraw/canvas note
+    --overlay-bg-color: #C8C2AA;
+}
+
+.excalidraw .color-picker-label-swatch {
+    border: 2px solid #A39F89;
+}
+*/
+
+
+.excalidraw {
+    filter: invert(6%) sepia(7%) saturate(651%) hue-rotate(7deg) brightness(85%) contrast(85%);
+    --color-primary: #A19F9F;
+    --button-gray-1: #CCCCCC;
+    --button-gray-2: #C2C3C9;
+    --button-gray-3: #9DA0A8;
+    /* scroll bar color is from trilium, but we need to change it due to color filter */
+    --main-background-color: transparent;
+}
+
