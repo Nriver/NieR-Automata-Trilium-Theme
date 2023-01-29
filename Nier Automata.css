@@ -442,11 +442,16 @@ div.similar-notes-wrapper a,
    Trilium 0.48 compatibility
 */
 
-#launcher-pane {
-    background-size: 4px 4px;
-    background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
-    font-family: "Noto Sans", sans-serif;
-    box-shadow: inset 0 0 150px rgba(77, 73, 62, 0.3), inset 0 0 150px rgba(77, 73, 62, 0.3);
+#launcher-pane .launcher-button{
+   color: #4D493E  !important;
+   background-color: var(--color-blue-light) !important;
+}
+
+#launcher-pane{
+   background-size: 4px 4px;
+   background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px), linear-gradient(transparent, transparent 3px, rgba(0, 0, 0, 0.07) 4px);
+   font-family: "Noto Sans", sans-serif;
+   box-shadow: inset 0 0 150px rgba(77, 73, 62, 0.3), inset 0 0 150px rgba(77, 73, 62, 0.3);
 }
 
 #left-pane {
@@ -573,5 +578,32 @@ excalidraw/canvas note
     --button-gray-3: #9DA0A8;
     /* scroll bar color is from trilium, but we need to change it due to color filter */
     --main-background-color: transparent;
+}
+
+/* Toc fix from https://github.com/zadam/trilium/issues/3129 */
+/* ----------- RIGHT PANE ------------ */
+
+div#right-pane.component {
+    margin-left: 10px;
+}
+
+div#right-pane.component div.card-header {
+    border-radius: 0;
+    font-family: var(--font-headers);
+    font-weight: normal;
+}
+
+div#right-pane.component div.card-header .toc > ol {
+    padding-left: 15px;
+}
+
+div#right-pane.component div.card-body .toc > ol > ol li {
+    list-style: lower-latin;
+}
+
+div#right-pane.component div.card-body div.toc-widget {
+    padding: 0 1rem;
+    contain: none;
+    overflow: auto;
 }
 
