@@ -70,21 +70,6 @@ body{
    background-color: transparent;
 }
 
-bodyh1 {
-   font-size: 2.5rem;
-   margin: 1em 0;
-}
-
-bodyh2 {
-   font-size: 2.2rem;
-   margin: 1em 0;
-}
-
-bodyh3 {
-   font-size: 1.8rem;
-   margin: 1em 0;
-}
-
 .ck-content hr {
    border: none;
    height: 1px;
