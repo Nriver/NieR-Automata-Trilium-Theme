@@ -440,7 +440,8 @@ input[type="checkbox"].override-theme-fonts{
 }
 
 .input-group-text,
-.form-control {
+.form-control,
+.form-select {
    border: 1px solid #4D493E !important;
 }
 
