@@ -120,7 +120,7 @@ body.note-tab-row,
 body.note-tab-row-container,
 body.standard-top-widget,
 bodydiv#right-pane .card-header,
-bodyinput.note-title {
+.note-title-widget> input.note-title{
    background: transparent !important;
 }
 
