@@ -1,7 +1,10 @@
 # NieR-Automata-Trilium-Theme
 A fan made NieR: Automata style theme for [Trilium Notes](https://github.com/zadam/trilium). (I was going to make a lesser bright solarized light theme, and somehow this come out.)
 
-Tested with Trilium 0.48.7
+Tested with Trilium 0.63.7
+Tested with TriliumNext 0.91.2-beta
+
+(Deprecated) Tested with Trilium 0.48.7
 
 ![ksnip_20211126-155442](https://user-images.githubusercontent.com/6752679/143546413-7d02af61-ebeb-4f41-b061-a1c24e67eada.png)
 
