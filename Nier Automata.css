@@ -286,7 +286,8 @@ div.similar-notes-wrapper a,
   after color #4D493E
 */
 
-input[type="checkbox"] {
+input[type="checkbox"],
+.component input[type="checkbox"]{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -312,11 +313,11 @@ input[type="checkbox"]:checked::after {
     border: none;
 }
 
-input[type="checkbox"].override-theme-fonts {
-    display: block !important;
+input[type="checkbox"].override-theme-fonts{
+    display: block;
     border-radius: 0;
-    width: calc(1.5em + 0.75rem + 2px);
-    height: calc(1.5em + 0.75rem + 2px);
+    width: calc(1.5em);
+    height: calc(1.5em);
 }
 
 .ck-editor__editable.ck-content .todo-list .todo-list__label>span[contenteditable=false]>input[checked]:before {
