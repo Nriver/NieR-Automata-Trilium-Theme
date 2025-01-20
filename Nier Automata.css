@@ -541,3 +541,10 @@ div#right-pane.component div.card-body div.toc-widget {
     overflow: auto;
 }
 
+/* 
+  0.90 dropdown option arrow 
+  change the background to transparent
+*/
+.form-select {
+    background: var(--input-background-color) url(data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>) right 0.75rem center / 15px 20px no-repeat;
+}
